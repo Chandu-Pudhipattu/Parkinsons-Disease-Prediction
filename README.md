@@ -10,23 +10,23 @@ The dataset contains 24 features, including:
 
 Categorical Features:
 
-name: Subject names (transformed into numerical identifiers).
+   name: Subject names (transformed into numerical identifiers).
 
 Numerical Features:
 
-MDVP:Fo(Hz), MDVP:Fhi(Hz), MDVP:Flo(Hz) (Frequency-related measures).
+   MDVP:Fo(Hz), MDVP:Fhi(Hz), MDVP:Flo(Hz) (Frequency-related measures).
 
-MDVP:Jitter(%), MDVP:Jitter(Abs), MDVP:RAP, MDVP:PPQ, Jitter:DDP (Jitter metrics).
+   MDVP:Jitter(%), MDVP:Jitter(Abs), MDVP:RAP, MDVP:PPQ, Jitter:DDP (Jitter metrics).
 
-MDVP:Shimmer, MDVP:Shimmer(dB), Shimmer:APQ3, Shimmer:APQ5, MDVP:APQ, Shimmer:DDA (Shimmer metrics).
+   MDVP:Shimmer, MDVP:Shimmer(dB), Shimmer:APQ3, Shimmer:APQ5, MDVP:APQ, Shimmer:DDA (Shimmer metrics).
 
-NHR, HNR (Noise-to-harmonics ratio).
+   NHR, HNR (Noise-to-harmonics ratio).
 
-RPDE, DFA (Nonlinear dynamical complexity measures).
+   RPDE, DFA (Nonlinear dynamical complexity measures).
 
-spread1, spread2, D2, PPE (Various vocal measurements).
+   spread1, spread2, D2, PPE (Various vocal measurements).
 
-status (Target variable: 1 for Parkinson’s disease, 0 for healthy).
+   status (Target variable: 1 for Parkinson’s disease, 0 for healthy).
 
 **Workflow**
 
@@ -34,27 +34,27 @@ status (Target variable: 1 for Parkinson’s disease, 0 for healthy).
 
 Data Cleaning:
 
-Removed irrelevant parts of the name column (e.g., prefixes and suffixes).
+   Removed irrelevant parts of the name column (e.g., prefixes and suffixes).
 
-Encoded the name column into numerical subject identifiers.
+   Encoded the name column into numerical subject identifiers.
 
 Feature Scaling:
 
-Normalized numerical features for better model performance.
+   Normalized numerical features for better model performance.
 
 Splitting Data:
 
-Divided the dataset into training and test sets.
+   Divided the dataset into training and test sets.
 
 2. **Exploratory Data Analysis (EDA)**
 
 Visualized feature distributions and correlations:
 
-Correlation Heatmap: Identified features strongly correlated with the target.
+   Correlation Heatmap: Identified features strongly correlated with the target.
 
-Heatmap: Identified the missing values
+   Heatmap: Identified the missing values
 
-Histplot: Identified the distributions between features
+   Histplot: Identified the distributions between features
 
 3. **Model Implementation**
 
@@ -116,7 +116,3 @@ Test Accuracy: Evaluated the model on the test set, achieving 98.31% accuracy.
 - **Deployment:** Build a web application to provide real-time predictions using Django or Flask.
 - **Explainability:** Implement SHAP or LIME for model interpretability.
    ```
-
-
-
-
